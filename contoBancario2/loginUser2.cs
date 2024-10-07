@@ -24,8 +24,11 @@ namespace contoBancario2
             userStore = username.Text;
             MessageBox.Show("Benvenuto " + userStore);
             loginUser2.ActiveForm.Hide();
-            new Form().ShowDialog();
-            
+            MainPage2 mainPage = new MainPage2();
+            mainPage.Show();
+
+
         }
+
     }
 }
