@@ -71,8 +71,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
-            this.pictureBox1.ImageLocation = "C:\\Users\\simone.benanchietti\\source\\repos\\appBancaria\\contoBancario2\\Sources\\Acco" +
-    "unt.png";
+            this.pictureBox1.ImageLocation = "..\\..\\Sources\\Account.png";
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(474, 247);

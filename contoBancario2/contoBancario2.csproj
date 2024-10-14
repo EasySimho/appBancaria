@@ -90,6 +90,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sources\account.png" />
+    <Content Include="Sources\check.png" />
+    <Content Include="Sources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TextFiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
