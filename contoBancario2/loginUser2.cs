@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace contoBancario2
 {
@@ -19,16 +14,45 @@ namespace contoBancario2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public class UserConfig
         {
-            userStore = username.Text;
-            MessageBox.Show("Benvenuto " + userStore);
-            loginUser2.ActiveForm.Hide();
-            MainPage2 mainPage = new MainPage2();
-            mainPage.Show();
-
-
+            public string Username { get; set; }
+            public string Password { get; set; }
+            public string Saldo { get; set; }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string percorsoLogin = @"C:\Users\simone.benanchietti\Source\Repos\EasySimho\appBancaria\contoBancario2\TextFiles\config.json";
+
+         
+            string jsonContent = File.ReadAllText(percorsoLogin);
+
+            UserConfig config = JsonConvert.DeserializeObject<UserConfig>(jsonContent);
+
+            if (config.Username == username.Text && config.Password == password.Text)
+            {
+                userStore = config.Username;
+
+                MessageBox.Show("Benvenuto " + userStore, "Login Avvenuto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                // Nascondi la form di login e mostra la MainPage2
+                loginUser2.ActiveForm.Hide();
+
+                // Passa il nome utente alla nuova form MainPage2 tramite il costruttore
+                MainPage2 mainPage = new MainPage2();
+                mainPage.Saldo = config.Saldo;
+                mainPage.Show();
+            }
+            else
+            {
+                // Mostra il messaggio di errore se il login fallisce
+                MessageBox.Show("Impossibile Accedere", "Errore", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+
+                // Pulisci i campi di input
+                username.Clear();
+                password.Clear();
+            }
+        }
     }
 }

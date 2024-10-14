@@ -1,6 +1,6 @@
-﻿namespace contoBancario2
+﻿namespace contoBancario1
 {
-    partial class MainPage2
+    partial class MainPage1
     {
         /// <summary>
         /// Required designer variable.
@@ -32,15 +32,15 @@
             this.saldo = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.importoDaPrelevare = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.importoDaInviare = new System.Windows.Forms.TextBox();
             this.sendMoney = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.invioDisponibileText = new System.Windows.Forms.Label();
             this.immagineInvioDisponibile = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.importoDaInviare = new System.Windows.Forms.TextBox();
-            this.importoDaPrelevare = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -115,6 +115,26 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(585, 115);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
+            // importoDaPrelevare
+            // 
+            this.importoDaPrelevare.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.importoDaPrelevare.Location = new System.Drawing.Point(3, 60);
+            this.importoDaPrelevare.Name = "importoDaPrelevare";
+            this.importoDaPrelevare.Size = new System.Drawing.Size(579, 20);
+            this.importoDaPrelevare.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(579, 57);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Preleva";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -142,6 +162,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ricarica Conto";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // importoDaInviare
+            // 
+            this.importoDaInviare.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.importoDaInviare.Location = new System.Drawing.Point(3, 60);
+            this.importoDaInviare.Name = "importoDaInviare";
+            this.importoDaInviare.Size = new System.Drawing.Size(579, 20);
+            this.importoDaInviare.TabIndex = 1;
             // 
             // sendMoney
             // 
@@ -194,34 +222,6 @@
             this.immagineInvioDisponibile.TabIndex = 2;
             this.immagineInvioDisponibile.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(579, 57);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Preleva";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // importoDaInviare
-            // 
-            this.importoDaInviare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.importoDaInviare.Location = new System.Drawing.Point(3, 60);
-            this.importoDaInviare.Name = "importoDaInviare";
-            this.importoDaInviare.Size = new System.Drawing.Size(579, 20);
-            this.importoDaInviare.TabIndex = 1;
-            // 
-            // importoDaPrelevare
-            // 
-            this.importoDaPrelevare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.importoDaPrelevare.Location = new System.Drawing.Point(3, 60);
-            this.importoDaPrelevare.Name = "importoDaPrelevare";
-            this.importoDaPrelevare.Size = new System.Drawing.Size(579, 20);
-            this.importoDaPrelevare.TabIndex = 2;
-            // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(3, 108);
@@ -229,13 +229,13 @@
             this.progressBar1.Size = new System.Drawing.Size(585, 32);
             this.progressBar1.TabIndex = 3;
             // 
-            // MainPage2
+            // MainPage1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 619);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "MainPage2";
+            this.Name = "MainPage1";
             this.Text = "MainPage2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainPage2_Load);

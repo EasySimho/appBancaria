@@ -6,13 +6,13 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace contoBancario2
+namespace contoBancario1
 {
-    public partial class MainPage2 : Form
+    public partial class MainPage1 : Form
     {
         public string Saldo { get; set; }
 
-        public MainPage2()
+        public MainPage1()
         {
             InitializeComponent();
         }
