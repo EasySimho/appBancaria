@@ -236,7 +236,6 @@
             this.ClientSize = new System.Drawing.Size(782, 554);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MainPage2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Simone == 2";
             this.Load += new System.EventHandler(this.MainPage2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
