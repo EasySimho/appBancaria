@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 619);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(782, 554);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // saldo
@@ -76,7 +76,7 @@
             this.saldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saldo.Location = new System.Drawing.Point(3, 0);
             this.saldo.Name = "saldo";
-            this.saldo.Size = new System.Drawing.Size(1188, 176);
+            this.saldo.Size = new System.Drawing.Size(776, 158);
             this.saldo.TabIndex = 0;
             this.saldo.Text = "0.00€";
             this.saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,14 +89,14 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.sendMoney, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 179);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 161);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(591, 437);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(385, 390);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -107,20 +107,20 @@
             this.tableLayoutPanel4.Controls.Add(this.importoDaPrelevare, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 124);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 111);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(585, 115);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(379, 102);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // importoDaPrelevare
             // 
             this.importoDaPrelevare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.importoDaPrelevare.Location = new System.Drawing.Point(3, 60);
+            this.importoDaPrelevare.Location = new System.Drawing.Point(3, 54);
             this.importoDaPrelevare.Name = "importoDaPrelevare";
-            this.importoDaPrelevare.Size = new System.Drawing.Size(579, 20);
+            this.importoDaPrelevare.Size = new System.Drawing.Size(373, 20);
             this.importoDaPrelevare.TabIndex = 2;
             // 
             // label2
@@ -130,9 +130,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(579, 57);
+            this.label2.Size = new System.Drawing.Size(373, 51);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Preleva";
+            this.label2.Text = "Ricarica Conto";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
@@ -148,7 +148,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(585, 115);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(379, 102);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label1
@@ -158,25 +158,25 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(579, 57);
+            this.label1.Size = new System.Drawing.Size(373, 51);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ricarica Conto";
+            this.label1.Text = "Invia Denaro";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // importoDaInviare
             // 
             this.importoDaInviare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.importoDaInviare.Location = new System.Drawing.Point(3, 60);
+            this.importoDaInviare.Location = new System.Drawing.Point(3, 54);
             this.importoDaInviare.Name = "importoDaInviare";
-            this.importoDaInviare.Size = new System.Drawing.Size(579, 20);
+            this.importoDaInviare.Size = new System.Drawing.Size(373, 20);
             this.importoDaInviare.TabIndex = 1;
             // 
             // sendMoney
             // 
             this.sendMoney.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sendMoney.Location = new System.Drawing.Point(3, 366);
+            this.sendMoney.Location = new System.Drawing.Point(3, 327);
             this.sendMoney.Name = "sendMoney";
-            this.sendMoney.Size = new System.Drawing.Size(585, 68);
+            this.sendMoney.Size = new System.Drawing.Size(379, 60);
             this.sendMoney.TabIndex = 5;
             this.sendMoney.Text = "Invia Richiesta";
             this.sendMoney.UseVisualStyleBackColor = true;
@@ -190,13 +190,13 @@
             this.tableLayoutPanel6.Controls.Add(this.immagineInvioDisponibile, 0, 2);
             this.tableLayoutPanel6.Controls.Add(this.progressBar1, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(600, 179);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(394, 161);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.09638F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.68675F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.21687F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(591, 437);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(385, 390);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // invioDisponibileText
@@ -206,7 +206,7 @@
             this.invioDisponibileText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invioDisponibileText.Location = new System.Drawing.Point(3, 0);
             this.invioDisponibileText.Name = "invioDisponibileText";
-            this.invioDisponibileText.Size = new System.Drawing.Size(585, 105);
+            this.invioDisponibileText.Size = new System.Drawing.Size(379, 93);
             this.invioDisponibileText.TabIndex = 1;
             this.invioDisponibileText.Text = "Scritta canale di invio soldi";
             this.invioDisponibileText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -215,29 +215,29 @@
             // 
             this.immagineInvioDisponibile.Dock = System.Windows.Forms.DockStyle.Fill;
             this.immagineInvioDisponibile.ImageLocation = "..\\..\\Sources\\Check.png";
-            this.immagineInvioDisponibile.Location = new System.Drawing.Point(3, 202);
+            this.immagineInvioDisponibile.Location = new System.Drawing.Point(3, 180);
             this.immagineInvioDisponibile.Name = "immagineInvioDisponibile";
-            this.immagineInvioDisponibile.Size = new System.Drawing.Size(585, 232);
+            this.immagineInvioDisponibile.Size = new System.Drawing.Size(379, 207);
             this.immagineInvioDisponibile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.immagineInvioDisponibile.TabIndex = 2;
             this.immagineInvioDisponibile.TabStop = false;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(3, 108);
+            this.progressBar1.Location = new System.Drawing.Point(3, 96);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(585, 32);
+            this.progressBar1.Size = new System.Drawing.Size(379, 32);
             this.progressBar1.TabIndex = 3;
             // 
             // MainPage2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 619);
+            this.ClientSize = new System.Drawing.Size(782, 554);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MainPage2";
-            this.Text = "MainPage2";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.Text = "Simone == 2";
             this.Load += new System.EventHandler(this.MainPage2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
