@@ -6,13 +6,13 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace contoBancario2
+namespace contoBancario1
 {
-    public partial class MainPage2 : Form
+    public partial class MainPage1 : Form
     {
         public string Saldo { get; set; }
 
-        public MainPage2()
+        public MainPage1()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace contoBancario2
 
         private async void sendMoney_Click(object sender, EventArgs e)
         {
-            string percorsoLogin = @"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\contoBancario2\TextFiles\config.json";
+            string percorsoLogin = @"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\contoBancario1\TextFiles\config.json";
 
             bool valid = (importoDaInviare.Text).All(char.IsDigit) && (importoDaInviare.Text != "") && (importoDaPrelevare.Text == "");
             bool valid2 = (importoDaPrelevare.Text).All(char.IsDigit) && (importoDaPrelevare.Text != "") && (importoDaInviare.Text == "");
@@ -37,8 +37,8 @@ namespace contoBancario2
             progressBar1.Style = ProgressBarStyle.Marquee;  // Imposta la barra in modalità indeterminata
             await Task.Delay(2000);  // Simula un ritardo di 2 secondi (2000ms)
 
-            
-            
+
+
             // Caso di invio denaro
             if (valid)
             {
@@ -55,9 +55,9 @@ namespace contoBancario2
                     UserConfig config = JsonConvert.DeserializeObject<UserConfig>(jsonContent);
 
 
+                    File.Create(@"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\CommonFiles\Scambio.txt");
 
                     File.WriteAllText(@"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\CommonFiles\Scambio.txt", importoDaInviare.Text + " 1");
-                    
                     // Aggiungi l'importo al saldo
                     double saldoAttuale = double.Parse(config.Saldo);
                     saldoAttuale += sendingImport;
@@ -74,7 +74,7 @@ namespace contoBancario2
                     MessageBox.Show("Denaro inviato con successo", "Operazione Avvenuta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     importoDaInviare.Text = string.Empty;
                 }
-                
+
             }
             // Caso di prelievo denaro
             else if (valid2)
@@ -131,15 +131,15 @@ namespace contoBancario2
         }
         private void timer_Tick(object sender, EventArgs e)
         {
-            if(File.Exists(@"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\CommonFiles\Scambio.txt"))
+            if (File.Exists(@"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\CommonFiles\Scambio.txt"))
             {
                 string contenuto = File.ReadAllText(@"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\CommonFiles\Scambio.txt");
                 string[] words = contenuto.Split(' ');
                 double utente = double.Parse(words[1]);
                 double importo = double.Parse(words[0]);
-                if(utente == 2)
+                if (utente == 2)
                 {
-                    string percorsoLogin = @"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\contoBancario2\TextFiles\config.json";
+                    string percorsoLogin = @"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\contoBancario1\TextFiles\config.json";
                     string jsonContent = File.ReadAllText(percorsoLogin);
                     UserConfig config = JsonConvert.DeserializeObject<UserConfig>(jsonContent);
 

@@ -23,7 +23,7 @@ namespace contoBancario1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string percorsoLogin = @"C:\Users\simone.benanchietti\Source\Repos\EasySimho\appBancaria\contoBancario2\TextFiles\config.json";
+            string percorsoLogin = @"C:\Users\sbena\Source\Repos\EasySimho\appBancaria\contoBancario1\TextFiles\config.json";
 
          
             string jsonContent = File.ReadAllText(percorsoLogin);
